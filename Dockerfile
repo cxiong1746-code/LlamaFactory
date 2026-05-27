@@ -41,8 +41,8 @@ RUN pip install --no-cache-dir -e . --no-build-isolation && \
     pip install --no-cache-dir -r requirements/metrics.txt --no-build-isolation
 
 
-RUN pip install --no-cache-dir \
-    "transformers==4.50.0" \
+RUN pip install --no-cache-dir --force-reinstall \
+    "transformers==5.6.0" \
     "accelerate==1.10.1" \
     "datasets==4.0.0" \
     "peft==0.18.1" \
